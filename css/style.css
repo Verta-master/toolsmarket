@@ -10,6 +10,18 @@
   font-style: normal;
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
+@font-face {
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensans-semibold.woff2") format("woff2"), url("../fonts/opensans-semibold.woff") format("woff");
+}
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -1083,4 +1095,317 @@ button {
           align-items: flex-end;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
+}
+.tabs__title {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.tabs__title::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+.tabs__name {
+  padding: 0 20px;
+  margin: 0 4px;
+  background-color: #fff;
+}
+.tabs__name a {
+  outline: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fa832a;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__name a:hover,
+.tabs__name a:active {
+  color: #333;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.ui-tabs-active a {
+  color: #333;
+}
+.tabs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+.tabs__item {
+  position: relative;
+  width: 268px;
+  min-height: 534px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  margin-right: 31px;
+  border: 1px solid #e2e2e2;
+}
+.tabs__item:nth-child(4n) {
+  margin-right: 0;
+}
+.tabs__label {
+  position: absolute;
+  top: 10px;
+  left: -15px;
+}
+.tabs__label span {
+  display: block;
+  min-width: 75px;
+  padding: 2px 7px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  background-color: #fa832a;
+}
+.tabs__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 25px;
+}
+.tabs__brand a {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fa832a;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__brand a:hover,
+.tabs__brand a:active {
+  color: #333;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__price {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #fa832a;
+  font-size: 17px;
+  font-weight: 600;
+}
+.tabs__price span {
+  margin-left: 15px;
+  color: #777;
+  text-decoration: line-through;
+}
+.tabs__choice {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+.tabs__select {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  border: 1px #DDD solid;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.tabs__select::-ms-expand {
+  color: transparent;
+  border: none;
+  background-color: transparent;
+}
+.tabs__wrap {
+  width: 100%;
+  position: relative;
+}
+.tabs__wrap i {
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  right: 10px;
+}
+.tabs__form {
+  width: 100%;
+}
+.tabs__btns {
+  margin-top: auto;
+}
+.tabs__cart {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #333;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  color: #fff;
+  margin-right: 10px;
+}
+.tabs__cart::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #fa832a;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: -1;
+}
+.tabs__cart i {
+  position: relative;
+  z-index: 5;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.tabs__cart:hover::after,
+.tabs__cart:active::after {
+  top: 0;
+  z-index: 2;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.tabs__cart:hover i,
+.tabs__cart:active i {
+  color: #fff;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  -webkit-animation: moveFromTop .5s ease;
+          animation: moveFromTop .5s ease;
+}
+.tabs__like {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #efefef;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  color: #333;
+  margin-right: 10px;
+}
+.tabs__like::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #fa832a;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: -1;
+}
+.tabs__like i {
+  position: relative;
+  z-index: 5;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.tabs__like:hover::after,
+.tabs__like:active::after {
+  top: 0;
+  z-index: 2;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.tabs__like:hover i,
+.tabs__like:active i {
+  color: #fff;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  -webkit-animation: moveFromTop .5s ease;
+          animation: moveFromTop .5s ease;
+}
+.tabs__comment {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  display: block;
+  min-width: 75px;
+  padding: 2px 7px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #fa832a;
 }
