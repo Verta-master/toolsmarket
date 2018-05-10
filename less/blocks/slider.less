@@ -1,0 +1,33 @@
+.slider {
+  margin-bottom: 30px;
+}
+
+.slider__prev,
+.slider__next {
+  width: 40px;
+  height: 40px;
+  margin-top: 0;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 40px;
+  color: #333;
+  text-align: center;
+  transition: ease-out 0.3s;
+  outline: none;
+  
+  &:hover,
+  &:active {
+    color: @orange;
+    transition: ease-out 0.3s;
+  }
+}
+
+.slider__prev {
+  left: 25px;
+}
+
+.slider__next {
+  right: 25px;
+}
