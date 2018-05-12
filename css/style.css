@@ -589,9 +589,6 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
-.header {
-  margin-bottom: 30px;
-}
 .header__top {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -843,6 +840,10 @@ button {
   display: none;
 }
 .menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: #333;
   color: #fff;
 }
@@ -959,6 +960,7 @@ button {
   transition: ease-out 0.3s;
 }
 .slider {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .swiper-button-prev,
@@ -1771,6 +1773,7 @@ button {
   transition: ease 0.3s;
   margin-right: 10px;
   margin-bottom: 10px;
+  color: #333;
 }
 .social__list li a::after {
   content: "";
