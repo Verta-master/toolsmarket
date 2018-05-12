@@ -248,8 +248,8 @@
             <div class="tabs__btns">
               <a href="#" class="tabs__cart"><i class="fas fa-shopping-cart"></i></a>
               <a href="#" class="tabs__like"><i class="fas fa-heart"></i></a>
+              <span class="tabs__comment">Товар под заказ</span>
             </div>
-            <span class="tabs__comment">Товар под заказ</span>
           </li>
         </ul>
       </div>
@@ -482,10 +482,92 @@
         </li>
       </ul>
     </section>
+    
+    <section class="brands">
+      <div class="wrapper">
+        <p class="brands__title">ПРОИЗВОДИТЕЛИ</p>
+        <div class="swiper-container brands__slider">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide brands__item">
+              <img src="img/41_makita.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="68">
+            </li>
+            <li class="swiper-slide brands__item">
+              <img src="img/42_bosch.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="32">
+            </li>
+            <li class="swiper-slide brands__item">
+              <img src="img/43_hitachi.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="58">
+            </li>
+            <li class="swiper-slide brands__item">
+              <img src="img/44_enkor.png" alt="ПРОИЗВОДИТЕЛИ" width="125" height="29">
+            </li>
+            <li class="swiper-slide brands__item">
+              <img src="img/45_dewalt.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="40">
+            </li>
+            <li class="swiper-slide brands__item">
+              <img src="img/46_hilti.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="25">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="swiper-button-prev brands__prev"><i class="fas fa-chevron-left"></i></div>
+      <div class="swiper-button-next brands__next"><i class="fas fa-chevron-right"></i></div>
+    </section>
   </main>
   
-  <footer class="footer">
-    
+  <footer class="footer wrapper">
+    <div class="footer__top">
+      <div class="footer__info">
+        <p class="footer__title">ИНТЕРНЕТ-МАГАЗИН TOOLSMARKET</p>
+        <p>Теперь все больше людей в собственное удовольствие занимаются садовыми работами – ухаживают за плодовыми деревьями, выращивают цветы, создают японские сады, альпийские горки. Именно их интересуют садовая техника, с помощью которой они получают превосходный результат без особых затрат сил и времени. Еще совсем недавно садовая техника была атрибутом профессиональных ландшафтных дизайнеров и работников озеленительных хозяйств.</p>
+        <form action="#" method="post" class="subscribe">
+          <p class="footer__title">ПОДПИСАТЬСЯ НА РАССЫЛКУ</p>
+          <div class="subscribe__wrap">
+            <input type="email" name="email" class="subscribe__input" placeholder="Введите Ваш email">
+            <button type="submit" class="subscribe__btn">OK</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">КАТАЛОГ ТОВАРОВ</p>
+        <ul class="footer__list">
+          <li><a href="#">Электроинструменты</a></li>
+          <li><a href="#">Садовая техника</a></li>
+          <li><a href="#">Силовая техника</a></li>
+          <li><a href="#">Клининговое оборудование</a></li>
+          <li><a href="#">Слесарный инструмент</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">ИНФОРМАЦИЯ</p>
+        <ul class="footer__list">
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Хиты продаж</a></li>
+          <li><a href="#">Новые поступления</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">КОНТАКТЫ</p>
+        <p>Навание компании</p>
+        <a href="tel:+71234567890" class="footer__link">8 (123) 456-78-90</a>
+        <a href="mailto:info@sitename.sitename" class="footer__link">info@sitename.sitename</a>
+        <div class="social">
+          <p class="footer__title">МЫ В СОЦСЕТЯХ</p>
+          <ul class="social__list">
+            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" title="VKontakte"><i class="fab fa-vk"></i></a></li>
+            <li><a href="#" title="GooglePlus"><i class="fab fa-google-plus-g"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>Copyright © 2012 - 2018 гг.<br>Интернет-магазин инструментов ToolsMarket</p>
+    </div>
   </footer>
   
   <script src="js/jquery-3.2.1.min.js"></script>
@@ -506,6 +588,16 @@
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
+    });
+    var mySwiper = new Swiper ('.brands__slider', {
+      navigation: {
+        nextEl: '.brands__next',
+        prevEl: '.brands__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
     });
   </script>
   
