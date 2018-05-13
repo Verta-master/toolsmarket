@@ -37,6 +37,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
   
   a {
     color: #333;
@@ -72,7 +73,24 @@
 .header__enter {
   .round-btn(@grey-bg);
   margin-left: 5px;
-  .onHover();  
+  .onHover();
+  
+  &--opened {
+    background-color: @orange;
+    
+    &::after {
+      display: none;
+    }
+    i {
+      color: #fff;
+    }
+    &:hover,
+    &:active {
+      i {
+        animation: none;
+      }
+    }
+  }
 }
 
 .header__btn {
@@ -110,7 +128,7 @@
 .header__list {
   display: none;
   position: absolute;
-  z-index: 10;
+  z-index: 105;
   top: 50px;
   right: 0;
   padding: 10px;
@@ -128,7 +146,7 @@
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
-    transition: ease-out 0.3s;
+    transition: ease 0.3s;
     
     &:hover,
     &:active,

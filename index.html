@@ -33,6 +33,17 @@
           </ul>
         </nav>
         <a href="#" class="header__enter"><i class="fas fa-user"></i></a>
+        <div class="modal">
+          <form action="#" method="post" class="modal__form">
+            <label for="name" class="modal__label">Имя пользователя</label>
+            <input type="text" name="name" id="name" class="modal__input">
+            <label for="password" class="modal__label">Пароль</label>
+            <input type="password" name="password" id="password" class="modal__input">
+            <button type="submit" class="btn modal__btn">Войти</button>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Регистрация</a>
+          </form>
+        </div>
       </div>
     </div>
   </header>
@@ -489,22 +500,22 @@
         <div class="swiper-container brands__slider">
           <ul class="swiper-wrapper">
             <li class="swiper-slide brands__item">
-              <img src="img/41_makita.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="68">
+              <a href="#"><img src="img/41_makita.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="68"></a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/42_bosch.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="32">
+              <a href="#"><img src="img/42_bosch.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="32"></a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/43_hitachi.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="58">
+              <a href="#"><img src="img/43_hitachi.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="58"></a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/44_enkor.png" alt="ПРОИЗВОДИТЕЛИ" width="125" height="29">
+              <a href="#"><img src="img/44_enkor.png" alt="ПРОИЗВОДИТЕЛИ" width="125" height="29"></a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/45_dewalt.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="40">
+              <a href="#"><img src="img/45_dewalt.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="40"></a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/46_hilti.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="25">
+              <a href="#"><img src="img/46_hilti.jpg" alt="ПРОИЗВОДИТЕЛИ" width="125" height="25"></a>
             </li>
           </ul>
         </div>
@@ -523,7 +534,7 @@
           <p class="footer__title">ПОДПИСАТЬСЯ НА РАССЫЛКУ</p>
           <div class="subscribe__wrap">
             <input type="email" name="email" class="subscribe__input" placeholder="Введите Ваш email">
-            <button type="submit" class="subscribe__btn">OK</button>
+            <button type="submit" class="btn subscribe__btn">OK</button>
           </div>
         </form>
       </div>
