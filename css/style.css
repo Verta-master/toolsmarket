@@ -1937,7 +1937,7 @@ button {
     margin-right: auto;
   }
   .tabs__item:nth-child(4n) {
-    display: none;
+    margin-right: auto;
   }
   .news__item {
     width: 22.5%;
@@ -2039,12 +2039,6 @@ button {
   .buy__item:last-child {
     margin-bottom: 0;
   }
-  .tabs__item:nth-child(4n) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: auto;
-  }
   .buy__text p {
     display: block;
   }
@@ -2143,5 +2137,8 @@ button {
   }
   .header__user {
     margin-left: 0;
+  }
+  .modal {
+    right: -20px;
   }
 }
