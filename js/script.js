@@ -29,3 +29,20 @@ $("body").keydown(function(e) {
     $('.header__enter').removeClass('header__enter--opened');
   }
 })
+
+//Mobile menu
+$('.menu__btn').click(function() {
+  $('.menu').toggleClass('menu--opened');
+  $('.menu__list').slideToggle();
+})
+
+$('.menu__subbtn').click(function() {
+  $(this).next().slideToggle();
+  $(this).toggleClass('menu__subbtn--opened');
+})
+
+//Footer menu
+$('.footer__btn').click(function() {
+  $(this).next().slideToggle();
+  $(this).toggleClass('footer__btn--opened');
+})

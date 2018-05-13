@@ -53,12 +53,14 @@
       <ul class="menu__list">
         <li class="menu__item">
           <a href="#" class="menu__link">О КОМПАНИИ <i class="fas fa-angle-double-down"></i></a>
+          <button type="button" class="menu__subbtn"><i class="fas fa-angle-double-down"></i></button>
           <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">ВОПРОС-ОТВЕТ</a></li>
           </ul>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">КАТАЛОГ <i class="fas fa-angle-double-down"></i></a>
+          <button type="button" class="menu__subbtn"><i class="fas fa-angle-double-down"></i></button>
           <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">ЭЛЕКТРОИНСТРУМЕНТЫ</a></li>
             <li class="menu__subitem"><a href="#">САДОВАЯ ТЕХНИКА</a></li>
@@ -69,6 +71,7 @@
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">ПОЛЕЗНОЕ <i class="fas fa-angle-double-down"></i></a>
+          <button type="button" class="menu__subbtn"><i class="fas fa-angle-double-down"></i></button>
           <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">СТАТЬИ</a></li>
             <li class="menu__subitem"><a href="#">НОВОСТИ</a></li>
@@ -77,6 +80,7 @@
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">УСЛУГИ <i class="fas fa-angle-double-down"></i></a>
+          <button type="button" class="menu__subbtn"><i class="fas fa-angle-double-down"></i></button>
           <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">УСЛУГА 1</a></li>
             <li class="menu__subitem"><a href="#">УСЛУГА 2</a></li>
@@ -540,6 +544,7 @@
       </div>
       <div class="footer__block">
         <p class="footer__title">КАТАЛОГ ТОВАРОВ</p>
+        <button type="button" class="footer__btn"><i class="fas fa-angle-double-down"></i></button>
         <ul class="footer__list">
           <li><a href="#">Электроинструменты</a></li>
           <li><a href="#">Садовая техника</a></li>
@@ -550,6 +555,7 @@
       </div>
       <div class="footer__block">
         <p class="footer__title">ИНФОРМАЦИЯ</p>
+        <button type="button" class="footer__btn"><i class="fas fa-angle-double-down"></i></button>
         <ul class="footer__list">
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Хиты продаж</a></li>
@@ -560,7 +566,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </div>
-      <div class="footer__block">
+      <div class="footer__block footer__block--contacts">
         <p class="footer__title">КОНТАКТЫ</p>
         <p>Навание компании</p>
         <a href="tel:+71234567890" class="footer__link">8 (123) 456-78-90</a>
@@ -617,14 +623,6 @@
     $(function() {
       $("#tabs").tabs();
     });
-  </script>
-  
-  <!-- Mobile menu -->
-  <script>
-    $('.menu__btn').click(function() {
-      $('.menu').toggleClass('menu--opened');
-      $('.menu__list').slideToggle();
-    })
   </script>
 </body>
 </html>
