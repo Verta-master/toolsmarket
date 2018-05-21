@@ -1438,30 +1438,16 @@ button {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.news__list {
-  padding-bottom: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+.news {
+  position: relative;
+}
+.news__slider {
+  margin-bottom: 25px;
   border-bottom: 1px solid #e2e2e2;
 }
 .news__item {
   width: 270px;
-  margin-right: 30px;
   position: relative;
-}
-.news__item:nth-child(4n) {
-  margin-right: 0;
 }
 .news__img {
   width: 100%;
@@ -1511,12 +1497,7 @@ button {
   transition: ease 0.3s;
 }
 .news__date {
-  position: absolute;
-  top: 10px;
-  left: -15px;
-  padding: 2px 7px;
-  background-color: #fa832a;
-  color: #fff;
+  color: #fa832a;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -1897,12 +1878,6 @@ button {
   .tabs__item:nth-child(4n) {
     margin-right: auto;
   }
-  .news__item {
-    width: 22.5%;
-  }
-  .news__img {
-    height: 180px;
-  }
   .features__info {
     width: 70%;
   }
@@ -1923,6 +1898,11 @@ button {
   }
   .brands__slider {
     width: 936px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .news__slider {
+    width: 870px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2005,15 +1985,6 @@ button {
   .buy__text p {
     display: block;
   }
-  .news__item {
-    width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-  .news__item:nth-child(4n) {
-    margin-right: auto;
-  }
   .features__item {
     width: 400px;
     margin-bottom: 20px;
@@ -2035,6 +2006,9 @@ button {
   }
   .brands__slider {
     width: 702px;
+  }
+  .news__slider {
+    width: 570px;
   }
 }
 @media (max-width: 766px) {
@@ -2091,6 +2065,11 @@ button {
   }
   .brands__slider {
     width: 468px;
+  }
+}
+@media (max-width: 600px) {
+  .news__slider {
+    width: 270px;
   }
 }
 @media (max-width: 480px) {
