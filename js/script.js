@@ -46,3 +46,8 @@ $('.footer__btn').click(function() {
   $(this).next().slideToggle();
   $(this).toggleClass('footer__btn--opened');
 })
+
+$('.tabs__like').click(function() {
+  event.preventDefault();
+  $(this).toggleClass('tabs__like--active');
+})
