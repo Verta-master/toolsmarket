@@ -5,6 +5,7 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>ToolsMarket</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -114,16 +115,28 @@
     
     <article class="wrapper wrapper--sidebar">
       <section class="sidebar">
-        <p class="title-main">КАТАЛОГ ТОВАРОВ</p>
-        <nav class="sidebar__menu">
-          <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Электроинструменты</a>
-          <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Садовая техника</a>
-          <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Силовая техника</a>
-          <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Клининговое оборудование</a>
-          <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Слесарный инструмент</a>
+        <p class="sidebar__title">КАТАЛОГ ТОВАРОВ</p>
+        <nav class="sidebar__nav">
+          <ul class="sidebar__menu">
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Электроинструменты</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Садовая техника</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Силовая техника</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Клининговое оборудование</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Слесарный инструмент</a>
+            </li>
+          </ul>
         </nav>
         
-        <p class="title-main">ПОДБОР ТОВАРОВ</p>
+        <p class="sidebar__title">ПОДБОР ТОВАРОВ</p>
         <form action="#" method="get" class="filter">
           <fieldset class="filter__field">
             <label for="articul" class="filter__label">АРТИКУЛ:</label>
@@ -131,7 +144,7 @@
           </fieldset>
           <fieldset class="filter__field">
             <span class="filter__label">ЦЕНА:</span>
-            
+            <div id="slider-price"></div>
           </fieldset>
           <fieldset class="filter__field">
             <span class="filter__label">ПРОИЗВОДИТЕЛЬ:</span>
@@ -146,7 +159,7 @@
           </fieldset>
           <fieldset class="filter__field">
             <span class="filter__label">ВЕС:</span>
-            
+            <div id="slider-weight"></div>
           </fieldset>
           <fieldset class="filter__field">
             <span class="filter__label">ТИП ПАТРОНА:</span>
@@ -208,7 +221,7 @@
             <a href="#" class="catalog__img">
               <img src="img/26_makita-6271dwpe.png" alt="ЭЛЕКТРОИНСТРУМЕНТЫ" width="148" height="148">
             </a>
-            <p class="catalog__title"><a href="#">ЭЛЕКТРОИНСТРУМЕНТЫ (4)</a></p>
+            <a href="#" class="catalog__title">ЭЛЕКТРОИНСТРУМЕНТЫ (4)</a>
             <a href="#" class="catalog__link">Дрели (4)</a>
             <a href="#" class="catalog__link">Шуруповерты (0)</a>
             <a href="#" class="catalog__link">Молотки (0)</a>
@@ -217,25 +230,25 @@
             <a href="#" class="catalog__img">
               <img src="img/20_makita-6271dwpe.png" alt="САДОВАЯ ТЕХНИКА" width="148" height="148">
             </a>
-            <p class="catalog__title"><a href="#">САДОВАЯ ТЕХНИКА (0)</a></p>
+            <a href="#" class="catalog__title">САДОВАЯ ТЕХНИКА (0)</a>
           </li>
           <li class="catalog__item">
             <a href="#" class="catalog__img">
               <img src="img/12_silovaya-tekhnika.png" alt="СИЛОВАЯ ТЕХНИКА" width="195" height="195">
             </a>
-            <p class="catalog__title"><a href="#">СИЛОВАЯ ТЕХНИКА (0)</a></p>
+            <a href="#" class="catalog__title">СИЛОВАЯ ТЕХНИКА (0)</a>
           </li>
           <li class="catalog__item">
             <a href="#" class="catalog__img">
               <img src="img/13_klinngovoe-oborudovanie.png" alt="КЛИННГОВОЕ ОБОРУДОВАНИЕ" width="195" height="195">
             </a>
-            <p class="catalog__title"><a href="#">КЛИННГОВОЕ ОБОРУДОВАНИЕ (0)</a></p>
+            <a href="#" class="catalog__title">КЛИННГОВОЕ ОБОРУДОВАНИЕ (0)</a>
           </li>
           <li class="catalog__item">
             <a href="#" class="catalog__img">
               <img src="img/14_slesarnyy-instrument.png" alt="СЛЕСАРНЫЙ ИНСТРУМЕНТ" width="195" height="195">
             </a>
-            <p class="catalog__title"><a href="#">СЛЕСАРНЫЙ ИНСТРУМЕНТ (0)</a></p>
+            <a href="#" class="catalog__title">СЛЕСАРНЫЙ ИНСТРУМЕНТ (0)</a>
           </li>
         </ul>
       </section>
@@ -395,6 +408,7 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/range-slider.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   
   <!-- Sliders -->
