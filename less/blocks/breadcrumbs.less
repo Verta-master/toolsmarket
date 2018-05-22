@@ -1,0 +1,47 @@
+.breadcrumbs {
+  margin-bottom: 25px;
+}
+
+.breadcrumbs__link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 35px;
+  color: #888;
+  font-size: 15px;
+  line-height: 25px;
+  transition: ease-out 0.3s;
+  
+  &--home {
+    font-size: 22px;
+    line-height: 1;
+    
+    &::after {
+      font-size: 15px;
+      color: #333;
+    }
+  }
+  
+  &::after {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    transform: translateY(-50%);
+    font-size: 15px;
+  }
+  
+  &--active {
+    color: #333;
+    
+    &::after {
+      display: none;
+    }
+  }
+  
+  &:hover,
+  &:active {
+    color: #333;
+    transition: ease-out 0.3s;
+  }
+}
