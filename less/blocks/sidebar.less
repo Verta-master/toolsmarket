@@ -1,3 +1,33 @@
 .sidebar {
   width: 270px;
 }
+
+.sidebar__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.sidebar__link {
+  display: block;
+  font-size: 15px;
+  padding: 12px 10px;
+  border-bottom: 1px solid #e2e2e2;
+  transition: ease-out 0.3s;
+  
+  i {
+    margin-right: 8px;
+  }
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: @orange;
+    transition: ease-out 0.3s;
+  }
+}
+
+.sidebar__nav {
+  margin-bottom: 30px;
+}
