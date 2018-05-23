@@ -976,6 +976,7 @@ button {
 .search__btn {
   width: 33px;
   height: 30px;
+  padding: 0;
   background-color: #fa832a;
   color: #fff;
   font-size: 17px;
@@ -1231,7 +1232,15 @@ button {
   font-weight: 300;
   text-transform: uppercase;
   text-align: right;
+}
+.tabs__label .tabs__hit {
   background-color: #fa832a;
+}
+.tabs__label .tabs__action {
+  background-color: #ff3333;
+}
+.tabs__label .tabs__new {
+  background-color: #33ccff;
 }
 .tabs__img {
   display: -webkit-box;
@@ -1939,6 +1948,12 @@ button {
 .sidebar__nav {
   margin-bottom: 30px;
 }
+.sidebar__btn {
+  display: none;
+}
+.sidebar__block {
+  position: relative;
+}
 .catalog {
   width: 840px;
 }
@@ -2079,7 +2094,7 @@ button {
   border-radius: 3px;
   width: 15px;
   height: 15px;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -2091,8 +2106,8 @@ button {
   left: 1px;
   width: 15px;
   height: 5px;
-  border-bottom: 1px solid #fa832a;
-  border-left: 1px solid #fa832a;
+  border-bottom: 2px solid #fa832a;
+  border-left: 2px solid #fa832a;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -2116,6 +2131,81 @@ button {
 }
 .filter__btn {
   width: 100%;
+}
+.filter__range {
+  width: 100%;
+  position: relative;
+  padding-bottom: 30px;
+}
+.filter__min {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 13px;
+  color: #777;
+}
+.filter__max {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 13px;
+  color: #777;
+  text-align: right;
+}
+.filter {
+  /* Ползунок */
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  /* позиционируем ползунки */
+  /* оформление активного участка (между двумя ползунками) */
+  /* скругление для полосы слайдера */
+}
+.filter .ui-slider {
+  position: relative;
+}
+.filter .ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 6px solid #fa832a;
+  cursor: pointer;
+  outline: none;
+}
+.filter .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  overflow: hidden;
+}
+.filter .ui-slider-horizontal {
+  height: 5px;
+}
+.filter .ui-slider-horizontal .ui-slider-handle {
+  top: -8px;
+  margin-left: -8px;
+}
+.filter .ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+.filter .ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+.filter .ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+.filter .ui-widget-header {
+  border: 1px solid #fa832a;
+  background-color: #fa832a;
+}
+.filter .ui-corner-all {
+  border-radius: 4px;
 }
 @media (max-width: 1199px) {
   .wrapper {
@@ -2170,6 +2260,12 @@ button {
     width: 870px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .catalog {
+    width: 660px;
+  }
+  .catalog__item {
+    width: 200px;
   }
 }
 @media (max-width: 1022px) {
@@ -2275,6 +2371,18 @@ button {
   .news__slider {
     width: 570px;
   }
+  .catalog {
+    width: 430px;
+  }
+  .catalog__item {
+    width: 200px;
+  }
+  .catalog__item:nth-child(3n) {
+    margin-right: 30px;
+  }
+  .catalog__item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 @media (max-width: 766px) {
   .header__top {
@@ -2309,6 +2417,7 @@ button {
     padding-right: 45px;
     position: relative;
   }
+  .sidebar__btn,
   .footer__btn {
     display: block;
     width: 20px;
@@ -2318,15 +2427,43 @@ button {
     top: 14px;
     right: 0;
   }
+  .sidebar__btn--opened,
   .footer__btn--opened {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
+  .sidebar__btn {
+    top: 0;
+  }
+  .sidebar__nav,
+  .filter,
   .footer__list {
     display: none;
   }
   .brands__slider {
     width: 468px;
+  }
+  .wrapper--sidebar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+  .catalog__item:nth-child(3n),
+  .catalog__item:nth-child(2n),
+  .catalog__item {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalog {
+    width: 100%;
+  }
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
   }
 }
 @media (max-width: 600px) {

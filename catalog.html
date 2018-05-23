@@ -115,104 +115,118 @@
     
     <article class="wrapper wrapper--sidebar">
       <section class="sidebar">
-        <p class="sidebar__title">КАТАЛОГ ТОВАРОВ</p>
-        <nav class="sidebar__nav">
-          <ul class="sidebar__menu">
-            <li class="sidebar__item">
-              <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Электроинструменты</a>
-            </li>
-            <li class="sidebar__item">
-              <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Садовая техника</a>
-            </li>
-            <li class="sidebar__item">
-              <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Силовая техника</a>
-            </li>
-            <li class="sidebar__item">
-              <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Клининговое оборудование</a>
-            </li>
-            <li class="sidebar__item">
-              <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Слесарный инструмент</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="sidebar__block">
+          <p class="sidebar__title">КАТАЛОГ ТОВАРОВ</p>
+          <button type="button" class="sidebar__btn"><i class="fas fa-angle-double-down"></i></button>
+          <nav class="sidebar__nav">
+            <ul class="sidebar__menu">
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Электроинструменты</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Садовая техника</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Силовая техника</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Клининговое оборудование</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Слесарный инструмент</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         
-        <p class="sidebar__title">ПОДБОР ТОВАРОВ</p>
-        <form action="#" method="get" class="filter">
-          <fieldset class="filter__field">
-            <label for="articul" class="filter__label">АРТИКУЛ:</label>
-            <input type="text" name="articul" id="articul" class="filter__input">
-          </fieldset>
-          <fieldset class="filter__field">
-            <span class="filter__label">ЦЕНА:</span>
-            <div id="slider-price"></div>
-          </fieldset>
-          <fieldset class="filter__field">
-            <span class="filter__label">ПРОИЗВОДИТЕЛЬ:</span>
-            <input type="checkbox" name="MAKITA" id="MAKITA" class="filter__check">
-            <label for="MAKITA" class="filter__option">MAKITA</label>
-            <input type="checkbox" name="Bosch" id="Bosch" class="filter__check">
-            <label for="Bosch" class="filter__option">Bosch</label>
-            <input type="checkbox" name="HITACHI" id="HITACHI" class="filter__check">
-            <label for="HITACHI" class="filter__option">HITACHI</label>
-            <input type="checkbox" name="ЭНКОР" id="ЭНКОР" class="filter__check">
-            <label for="ЭНКОР" class="filter__option">ЭНКОР</label>
-          </fieldset>
-          <fieldset class="filter__field">
-            <span class="filter__label">ВЕС:</span>
-            <div id="slider-weight"></div>
-          </fieldset>
-          <fieldset class="filter__field">
-            <span class="filter__label">ТИП ПАТРОНА:</span>
-            <input type="checkbox" name="type1" id="type1" class="filter__check">
-            <label for="type1" class="filter__option">быстрозажимной</label>
-            <input type="checkbox" name="type2" id="type2" class="filter__check">
-            <label for="type2" class="filter__option">ключевой</label>
-            <input type="checkbox" name="type3" id="type3" class="filter__check">
-            <label for="type3" class="filter__option">патрон под биты</label>
-            <input type="checkbox" name="type4" id="type4" class="filter__check">
-            <label for="type4" class="filter__option">внешний квадрат</label>
-          </fieldset>
-          <fieldset class="filter__field">
-            <span class="filter__label">КОЛИЧЕСТВО СКОРОСТЕЙ РАБОТЫ:</span>
-            <input type="checkbox" name="speed1" id="speed1" class="filter__check">
-            <label for="speed1" class="filter__option">1</label>
-            <input type="checkbox" name="speed2" id="speed2" class="filter__check">
-            <label for="speed2" class="filter__option">2</label>
-            <input type="checkbox" name="speed3" id="speed3" class="filter__check">
-            <label for="speed3" class="filter__option">3</label>
-          </fieldset>
-          <fieldset class="filter__field">
-            <span class="filter__label">ПИТАНИЕ:</span>
-            <input type="checkbox" name="charge1" id="charge1" class="filter__check">
-            <label for="charge1" class="filter__option">от сети</label>
-            <input type="checkbox" name="charge2" id="charge2" class="filter__check">
-            <label for="charge2" class="filter__option">от аккумулятора</label>
-          </fieldset>
-          <fieldset class="filter__field">
-            <span class="filter__label">РЕЖИМЫ РАБОТЫ:</span>
-            <input type="checkbox" name="mode1" id="mode1" class="filter__check">
-            <label for="mode1" class="filter__option">сверление</label>
-            <input type="checkbox" name="mode2" id="mode2" class="filter__check">
-            <label for="mode2" class="filter__option">сверление с ударом</label>
-            <input type="checkbox" name="mode3" id="mode3" class="filter__check">
-            <label for="mode3" class="filter__option">долбление</label>
-          </fieldset>
-          <fieldset class="filter__field">
-            <span class="filter__label">ЦВЕТ:</span>
-            <input type="checkbox" name="red" id="red" class="filter__check">
-            <label for="red" class="filter__option">синий</label>
-            <input type="checkbox" name="blue" id="blue" class="filter__check">
-            <label for="blue" class="filter__option">красный</label>
-          </fieldset>
-          <fieldset class="filter__field">
-            <span class="filter__label">МОЩНОСТЬ:</span>
-            <input type="checkbox" name="power2" id="power2" class="filter__check">
-            <label for="power2" class="filter__option">2</label>
-            <input type="checkbox" name="power4" id="power4" class="filter__check">
-            <label for="power4" class="filter__option">4</label>
-          </fieldset>
-          <button type="submit" class="btn filter__btn">Найти</button>
-        </form>
+        <div class="sidebar__block">
+          <p class="sidebar__title">ПОДБОР ТОВАРОВ</p>
+          <button type="button" class="sidebar__btn"><i class="fas fa-angle-double-down"></i></button>
+          <form action="#" method="get" class="filter">
+            <fieldset class="filter__field">
+              <label for="articul" class="filter__label">АРТИКУЛ:</label>
+              <input type="text" name="articul" id="articul" class="filter__input">
+            </fieldset>
+            <fieldset class="filter__field">
+              <span class="filter__label">ЦЕНА:</span>
+              <div class="filter__range">
+                <div id="slider-price"></div>
+                <input type="text" id="price-min" class="filter__min">
+                <input type="text" id="price-max" class="filter__max">
+              </div>
+            </fieldset>
+            <fieldset class="filter__field">
+              <span class="filter__label">ПРОИЗВОДИТЕЛЬ:</span>
+              <input type="checkbox" name="MAKITA" id="MAKITA" class="filter__check">
+              <label for="MAKITA" class="filter__option">MAKITA</label>
+              <input type="checkbox" name="Bosch" id="Bosch" class="filter__check">
+              <label for="Bosch" class="filter__option">Bosch</label>
+              <input type="checkbox" name="HITACHI" id="HITACHI" class="filter__check">
+              <label for="HITACHI" class="filter__option">HITACHI</label>
+              <input type="checkbox" name="ЭНКОР" id="ЭНКОР" class="filter__check">
+              <label for="ЭНКОР" class="filter__option">ЭНКОР</label>
+            </fieldset>
+            <fieldset class="filter__field">
+              <span class="filter__label">ВЕС:</span>
+              <div class="filter__range">
+                <div id="slider-weight"></div>
+                <input type="text" id="weight-min" class="filter__min">
+                <input type="text" id="weight-max" class="filter__max">
+              </div>
+            </fieldset>
+            <fieldset class="filter__field">
+              <span class="filter__label">ТИП ПАТРОНА:</span>
+              <input type="checkbox" name="type1" id="type1" class="filter__check">
+              <label for="type1" class="filter__option">быстрозажимной</label>
+              <input type="checkbox" name="type2" id="type2" class="filter__check">
+              <label for="type2" class="filter__option">ключевой</label>
+              <input type="checkbox" name="type3" id="type3" class="filter__check">
+              <label for="type3" class="filter__option">патрон под биты</label>
+              <input type="checkbox" name="type4" id="type4" class="filter__check">
+              <label for="type4" class="filter__option">внешний квадрат</label>
+            </fieldset>
+            <fieldset class="filter__field">
+              <span class="filter__label">КОЛИЧЕСТВО СКОРОСТЕЙ РАБОТЫ:</span>
+              <input type="checkbox" name="speed1" id="speed1" class="filter__check">
+              <label for="speed1" class="filter__option">1</label>
+              <input type="checkbox" name="speed2" id="speed2" class="filter__check">
+              <label for="speed2" class="filter__option">2</label>
+              <input type="checkbox" name="speed3" id="speed3" class="filter__check">
+              <label for="speed3" class="filter__option">3</label>
+            </fieldset>
+            <fieldset class="filter__field">
+              <span class="filter__label">ПИТАНИЕ:</span>
+              <input type="checkbox" name="charge1" id="charge1" class="filter__check">
+              <label for="charge1" class="filter__option">от сети</label>
+              <input type="checkbox" name="charge2" id="charge2" class="filter__check">
+              <label for="charge2" class="filter__option">от аккумулятора</label>
+            </fieldset>
+            <fieldset class="filter__field">
+              <span class="filter__label">РЕЖИМЫ РАБОТЫ:</span>
+              <input type="checkbox" name="mode1" id="mode1" class="filter__check">
+              <label for="mode1" class="filter__option">сверление</label>
+              <input type="checkbox" name="mode2" id="mode2" class="filter__check">
+              <label for="mode2" class="filter__option">сверление с ударом</label>
+              <input type="checkbox" name="mode3" id="mode3" class="filter__check">
+              <label for="mode3" class="filter__option">долбление</label>
+            </fieldset>
+            <fieldset class="filter__field">
+              <span class="filter__label">ЦВЕТ:</span>
+              <input type="checkbox" name="red" id="red" class="filter__check">
+              <label for="red" class="filter__option">синий</label>
+              <input type="checkbox" name="blue" id="blue" class="filter__check">
+              <label for="blue" class="filter__option">красный</label>
+            </fieldset>
+            <fieldset class="filter__field">
+              <span class="filter__label">МОЩНОСТЬ:</span>
+              <input type="checkbox" name="power2" id="power2" class="filter__check">
+              <label for="power2" class="filter__option">2</label>
+              <input type="checkbox" name="power4" id="power4" class="filter__check">
+              <label for="power4" class="filter__option">4</label>
+            </fieldset>
+            <button type="submit" class="btn filter__btn">Найти</button>
+          </form>
+        </div>
       </section>
       
       <section class="catalog">
@@ -408,6 +422,7 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
   <script src="js/range-slider.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   
@@ -424,6 +439,14 @@
       slidesPerView: 'auto',
       spaceBetween: 30,
     });
+  </script>
+  
+  <!-- Mobile sidebar -->
+  <script>
+    $('.sidebar__btn').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('sidebar__btn--opened');
+    })
   </script>
 </body>
 </html>
