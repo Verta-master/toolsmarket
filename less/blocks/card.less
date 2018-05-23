@@ -1,0 +1,155 @@
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__slider {
+  width: 770px;
+  position: relative;
+}
+
+.card__info {
+  width: 330px;
+}
+
+.card__img {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+}
+
+.card__thumbnail {
+  width: 82px;
+  height: 82px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  
+  img {
+    display: block;
+    max-height: 100%;
+    width: auto;
+  }
+}
+
+.card__list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.card__articul {
+  a,
+  span {
+    margin-left: 5px;
+    padding: 0 9px;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #eeeeee;
+    border-radius: 100px;
+  }
+}
+
+.card__title {
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.card__price {
+  margin-top: 40px;
+  font-size: 30px;
+  color: @orange;
+  position: relative;
+  
+  span {
+    position: absolute;
+    top: -150%;
+    left: 0;
+    font-size: 18px;
+    color: #777;
+    text-decoration: line-through;
+  }
+}
+
+.card__field,
+.card__amount {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card__amount {
+  margin-left: 30px;
+}
+
+.card__field {
+  margin-top: 10px;
+}
+
+.card__number {
+  width: 30px;
+  height: 35px;
+  padding: 0;
+  font-size: 20px;
+  border: 1px #DDD solid;
+  
+  &:hover,
+  &:active {
+    color: @orange;
+  }
+}
+
+.card__input {
+  width: 40px;
+  height: 35px;
+  border: 1px #DDD solid;
+  text-align: center;
+}
+
+.card__basket {
+  width: 100%;
+  height: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+  i {
+    margin-right: 10px;
+  }
+}
+
+.card__like {
+  transition: ease-out 0.3s;
+  
+  i {
+    margin-right: 10px;
+  }
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: @orange;
+    transition: ease-out 0.3s;
+  }
+}
+
+.card__comment {
+  padding: 10px;
+  font-size: 15px;
+  color: #333;
+  background-color: #FFEFCC;
+  
+  span {
+    font-weight: 600;
+  }
+}
