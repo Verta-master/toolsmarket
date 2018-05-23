@@ -52,6 +52,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .catalog {
+    width: 660px;
+  }
+  .catalog__item {
+    width: 200px;
+  }
 }
 
 //----------------------------------
@@ -164,6 +170,19 @@
   .news__slider {
     width: 570px;
   }
+  .catalog {
+    width: 430px;
+  }
+  .catalog__item {
+    width: 200px;
+    
+    &:nth-child(3n) {
+      margin-right: 30px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
 }
 
 //----------------------------
@@ -197,6 +216,7 @@
     padding-right: 45px;
     position: relative;
   }
+  .sidebar__btn,
   .footer__btn {
     display: block;
     width: 20px;
@@ -210,11 +230,35 @@
       transform: rotate(180deg);
     }
   }
+  .sidebar__btn {
+    top: 0;
+  }
+  .sidebar__nav,
+  .filter,
   .footer__list {
     display: none;
   }
   .brands__slider {
     width: 468px;
+  }
+  .wrapper--sidebar {
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+  .catalog__item:nth-child(3n),
+  .catalog__item:nth-child(2n),
+  .catalog__item {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalog {
+    width: 100%;
+  }
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
   }
 }
 

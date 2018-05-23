@@ -49,7 +49,7 @@
     border-radius: 3px;
     width: 15px;
     height: 15px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     transition: ease-out 0.3s;
   }
   
@@ -61,8 +61,8 @@
     left: 1px;
     width: 15px;
     height: 5px;
-    border-bottom: 1px solid @orange;
-    border-left: 1px solid @orange;
+    border-bottom: 2px solid @orange;
+    border-left: 2px solid @orange;
     transform: rotate(-45deg);
   }
   
@@ -89,4 +89,83 @@
 
 .filter__btn {
   width: 100%;
+}
+
+.filter__range {
+  width: 100%;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.filter__min {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+.filter__max {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 13px;
+  color: #777;
+  text-align: right;
+}
+
+.filter {
+  .ui-slider {
+    position: relative;
+  }
+  /* Ползунок */
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 6px solid @orange;
+    cursor: pointer;
+    outline: none;
+  }
+  .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+  }
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  .ui-slider-horizontal {
+    height: 5px;
+  }
+  /* позиционируем ползунки */
+  .ui-slider-horizontal .ui-slider-handle { 
+    top: -8px;
+    margin-left: -8px;
+  }
+  .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+  }
+  .ui-slider-horizontal .ui-slider-range-min { 
+    left: 0;
+  }
+  .ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+  }
+  /* оформление активного участка (между двумя ползунками) */
+  .ui-widget-header { 
+    border: 1px solid @orange;
+    background-color: @orange;
+  }
+  /* скругление для полосы слайдера */
+  .ui-corner-all {
+    border-radius: 4px;
+  }
 }
