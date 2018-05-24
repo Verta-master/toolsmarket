@@ -1,0 +1,197 @@
+.basket__table {
+  width: 100%;
+  border-collapse: collapse;
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    padding: 10px;
+    font-weight: 400;
+    color: #333;
+    font-weight: 700;
+    background-color: #fbfbfb;
+  }
+  
+  td:first-child {
+    width: 200px;
+  }
+  
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5) {
+    width: 120px;
+    text-align: center;
+  }
+  
+  td:nth-child(6) {
+    width: 70px;
+    text-align: center;
+  }
+  
+  .card__amount {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+.basket__img {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.basket__title {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    color: @orange;
+    transition: ease-out 0.3s;
+  }
+}
+
+.basket__remove {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: #777;
+  transition: ease-out 0.3s;
+  
+  i {
+    font-size: 23px;
+    font-weight: 400;
+  }
+  
+  &:hover,
+  &:active {
+    color: @orange;
+    transition: ease-out 0.3s;
+  }
+}
+
+.basket__final {
+  color: @orange;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.basket__price {
+  font-size: 18px;
+  font-weight: 600;
+  
+  p {
+    color: red;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  i {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    font-style: normal;
+    background-color: @orange;
+  }
+  
+  span {
+    display: block;
+    color: #777;
+    text-decoration: line-through;
+  }
+}
+
+.basket__total {
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: @orange;
+  text-align: right;
+  
+  span {
+    margin-left: 50px;
+  }
+}
+
+.basket__field {
+  .reset();
+  border: none;
+}
+
+.basket__item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.basket__option {
+  flex-grow: 1;
+}
+
+.basket__service {
+  font-weight: 600;
+}
+
+.basket__add,
+.basket__sum,
+.basket__rate {
+  width: 120px;
+}
+
+.basket__radio {
+  display: none;
+}
+
+.basket__label {
+  display: block;
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+  transition: ease-out 0.3s;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ddd;
+    transition: ease-out 0.3s;
+  }
+  
+  &:hover,
+  &:active {
+    color: @orange;
+    transition: ease-out 0.3s;
+    
+    &::before {
+      border-color: @orange;
+      transition: ease-out 0.3s;
+    }
+  }
+}
+
+.basket__radio:checked + label::before {
+  border-color: @orange;
+  background-color: @orange;
+}
