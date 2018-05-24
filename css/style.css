@@ -1003,6 +1003,7 @@ button {
   background-color: #fff;
   background-image: none;
   border-radius: 50%;
+  border: 1px solid #cccccc;
   font-size: 20px;
   line-height: 40px;
   color: #333;
@@ -1213,6 +1214,8 @@ button {
   margin-bottom: 15px;
   margin-right: 31px;
   border: 1px solid #e2e2e2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .tabs__item:nth-child(4n) {
   margin-right: 0;
@@ -1461,6 +1464,12 @@ button {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.title-2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #555454;
+}
 .news {
   position: relative;
 }
@@ -1644,7 +1653,7 @@ button {
 }
 .brands__prev,
 .brands__next {
-  top: 35%;
+  top: 40%;
 }
 .footer__top {
   padding-top: 15px;
@@ -2217,7 +2226,13 @@ button {
   border-radius: 4px;
 }
 .related {
+  padding-top: 20px;
   position: relative;
+}
+.related__slider {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e2e2e2;
 }
 .info {
   margin-top: 30px;
@@ -2251,6 +2266,57 @@ button {
   font-weight: 600;
   text-transform: uppercase;
   border-bottom: 1px solid #e2e2e2;
+}
+.info .ui-tabs-active {
+  background-color: #fa832a;
+}
+.info .ui-tabs-active .ui-tabs-anchor {
+  color: #fff;
+}
+.info__table {
+  width: 100%;
+}
+.info__table td {
+  padding: 10px 20px;
+}
+.info__table td:first-child {
+  width: 35%;
+  font-weight: 700;
+  color: #333;
+}
+.info__label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 700;
+}
+.info__label span {
+  color: red;
+}
+.info__area,
+.info__input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 3px 5px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+}
+.info__input {
+  height: 27px;
+}
+.info__area {
+  height: 200px;
+  min-height: 200px;
+  outline: none;
+}
+.info__btn {
+  width: 110px;
+}
+.info__btn i {
+  margin-left: 5px;
+}
+.info__comment span {
+  color: red;
 }
 .card__wrap {
   display: -webkit-box;
