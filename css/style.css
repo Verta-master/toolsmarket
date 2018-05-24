@@ -582,6 +582,11 @@ button {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0);
 }
+h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 0;
+}
 .wrapper {
   width: 1200px;
   padding-left: 15px;
@@ -1961,7 +1966,8 @@ button {
   margin-right: 8px;
 }
 .sidebar__link:hover,
-.sidebar__link:active {
+.sidebar__link:active,
+.sidebar__link--active {
   color: #fff;
   background-color: #fa832a;
   -webkit-transition: ease-out 0.3s;
@@ -2487,6 +2493,99 @@ button {
 .card__comment span {
   font-weight: 600;
 }
+.paper__title {
+  display: block;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.paper__title:hover,
+.paper__title:active {
+  color: #fa832a;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.paper__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.paper__img {
+  width: 25%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.paper__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.paper__img::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 5px solid #fa832a;
+  opacity: 0;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.paper__img:hover::before,
+.paper__img:active::before {
+  opacity: 1;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.paper__img:hover img,
+.paper__img:active img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.paper__info {
+  width: 75%;
+  padding-left: 30px;
+}
+.paper__info p {
+  margin-top: 0;
+  max-width: 100%;
+}
+.paper__item {
+  margin-bottom: 30px;
+}
+.paper__date {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.paper__date i {
+  margin-right: 5px;
+}
 @media (max-width: 1199px) {
   .wrapper {
     width: 100%;
@@ -2836,5 +2935,16 @@ button {
   }
   .brands__slider {
     width: 234px;
+  }
+  .paper__wrap {
+    display: block;
+  }
+  .paper__img {
+    width: 100%;
+  }
+  .paper__info {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
   }
 }
