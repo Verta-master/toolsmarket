@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>ToolsMarket</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top wrapper">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo" width="206" height="26">
+      </a>
+      <div class="header__contacts">
+        <a href="tel:+71234456789" class="header__phone">ТЕЛЕФОН: <b>+7 (123) 445-67-89</b></a>
+        <a href="mailto:E-mail@E-mail.ru" class="header__mail">E-mail: <span>E-mail@E-mail.ru</span></a>
+      </div>
+      <div class="header__user">
+        <a href="#" class="header__cart">КОРЗИНА<span>0<i class="fas fa-shopping-cart"></i></span></a>
+        <nav class="header__menu">
+          <button type="button" class="header__btn" title="Menu"></button>
+          <ul class="header__list">
+            <li class="header__item"><a href="#">ГЛАВНАЯ</a></li>
+            <li class="header__item"><a href="#">ОТЛОЖЕННЫЕ</a></li>
+            <li class="header__item"><a href="#">БЛОГ</a></li>
+            <li class="header__item"><a href="#">КОНТАКТЫ</a></li>
+            <li class="header__item"><a href="#">КАРТА САЙТА</a></li>
+            <li class="header__item"><a href="#">ФОТОГАЛЕРЕЯ</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="header__enter"><i class="fas fa-user"></i></a>
+        <div class="modal">
+          <form action="#" method="post" class="modal__form">
+            <label for="name" class="modal__label">Имя пользователя</label>
+            <input type="text" name="name" id="name" class="modal__input">
+            <label for="password" class="modal__label">Пароль</label>
+            <input type="password" name="password" id="password" class="modal__input">
+            <button type="submit" class="btn modal__btn">Войти</button>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Регистрация</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="menu">
+    <div class="wrapper menu__wrap">
+      <button type="button" class="menu__btn" title="Menu"></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">О КОМПАНИИ <i class="fas fa-angle-double-down"></i></a>
+          <button type="button" class="menu__subbtn"><i class="fas fa-angle-double-down"></i></button>
+          <ul class="menu__sublist">
+            <li class="menu__subitem"><a href="#">ВОПРОС-ОТВЕТ</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">КАТАЛОГ <i class="fas fa-angle-double-down"></i></a>
+          <button type="button" class="menu__subbtn"><i class="fas fa-angle-double-down"></i></button>
+          <ul class="menu__sublist">
+            <li class="menu__subitem"><a href="#">ЭЛЕКТРОИНСТРУМЕНТЫ</a></li>
+            <li class="menu__subitem"><a href="#">САДОВАЯ ТЕХНИКА</a></li>
+            <li class="menu__subitem"><a href="#">СИЛОВАЯ ТЕХНИКА</a></li>
+            <li class="menu__subitem"><a href="#">КЛИННГОВОЕ&nbsp;ОБОРУДОВАНИЕ</a></li>
+            <li class="menu__subitem"><a href="#">СЛЕСАРНЫЙ&nbsp;ИНСТРУМЕНТ</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ПОЛЕЗНОЕ <i class="fas fa-angle-double-down"></i></a>
+          <button type="button" class="menu__subbtn"><i class="fas fa-angle-double-down"></i></button>
+          <ul class="menu__sublist">
+            <li class="menu__subitem"><a href="#">СТАТЬИ</a></li>
+            <li class="menu__subitem"><a href="#">НОВОСТИ</a></li>
+            <li class="menu__subitem"><a href="#">ФОТОГАЛЕРЕЯ</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">УСЛУГИ <i class="fas fa-angle-double-down"></i></a>
+          <button type="button" class="menu__subbtn"><i class="fas fa-angle-double-down"></i></button>
+          <ul class="menu__sublist">
+            <li class="menu__subitem"><a href="#">УСЛУГА 1</a></li>
+            <li class="menu__subitem"><a href="#">УСЛУГА 2</a></li>
+            <li class="menu__subitem"><a href="#">УСЛУГА 3</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">СПЕЦПРЕДЛОЖЕНИЯ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ХИТЫ ПРОДАЖ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">НОВИНКИ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">КОНТАКТЫ</a>
+        </li>
+      </ul>
+      <form action="#" method="get" class="search">
+        <input type="text" name="search" class="search__input" placeholder="Поиск">
+        <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
+  
+  <main>
+    <nav class="breadcrumbs wrapper">
+      <a href="index.html" class="breadcrumbs__link breadcrumbs__link--home"><i class="fas fa-home"></i></a>
+      <a href="#" class="breadcrumbs__link">Полезное</a>
+      <span class="breadcrumbs__link breadcrumbs__link--active">Новости</span>
+    </nav>
+    
+    <article class="wrapper wrapper--sidebar">
+      <section class="sidebar">
+        <div class="sidebar__block">
+          <p class="sidebar__title">НАВИГАЦИЯ</p>
+          <button type="button" class="sidebar__btn"><i class="fas fa-angle-double-down"></i></button>
+          <nav class="sidebar__nav">
+            <ul class="sidebar__menu">
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Статьи</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link sidebar__link--active"><i class="fas fa-angle-right"></i>Новости</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link"><i class="fas fa-angle-right"></i>Фотогалерея</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      
+      <section class="catalog">
+        <h1>Новости</h1>
+        <ul class="paper">
+          <li class="paper__item">
+            <a href="#" class="paper__title">НОВОЕ ПОСТУПЛЕНИЕ ЯЩИКОВ ДЛЯ ИНСТРУМЕНТОВ</a>
+            <div class="paper__wrap">
+              <a href="#" class="paper__img">
+                <img src="img/9_novoe-postuplenie-yaschikov-d.jpg" alt="Новости" width="270" height="220">
+              </a>
+              <div class="paper__info">
+                <p>Ящик для инструментов нужен для того, чтобы инструменты, оснастка и крепеж, которые вы используете чаще всего, не потерялись. Там они будут в сохранности, к тому же так удобнее перевозить все необходимое для работы.</p>
+                <span class="paper__date"><i class="fas fa-calendar-alt"></i>02 НОЯБРЯ 2015 Г.</span>
+              </div>
+            </div>
+          </li>
+          <li class="paper__item">
+            <a href="#" class="paper__title">ИНСТРУМЕНТЫ ДЛЯ РЕЗЬБЫ ПО ДЕРЕВУ</a>
+            <div class="paper__wrap">
+              <a href="#" class="paper__img">
+                <img src="img/8_instrumenty-dlya-rezby-po-d.jpg" alt="Новости" width="270" height="220">
+              </a>
+              <div class="paper__info">
+                <p>Художественная резьба по дереву – это очень древний вид искусства, который является популярным до сих пор. Дело в том, что при помощи небольшого набора инструментов вы собственными руками можете создать настоящий шедевр.</p>
+                <span class="paper__date"><i class="fas fa-calendar-alt"></i>02 НОЯБРЯ 2015 Г.</span>
+              </div>
+            </div>
+          </li>
+          <li class="paper__item">
+            <a href="#" class="paper__title">КАК ПРАВИЛЬНО ВЫБРАТЬ ЦИРКУЛЯРНУЮ ПИЛУ?</a>
+            <div class="paper__wrap">
+              <a href="#" class="paper__img">
+                <img src="img/7_kak-pravilno-vybrat-inst.jpg" alt="Новости" width="270" height="220">
+              </a>
+              <div class="paper__info">
+                <p>Циркулярная пила – один из инструментов, который используется практически в любом строительстве. На сегодняшний день данный агрегат можно приобрести в каждом строительном магазине. При этом выбирать пилу следует, опираясь на ее характеристики.</p>
+                <span class="paper__date"><i class="fas fa-calendar-alt"></i>02 НОЯБРЯ 2015 Г.</span>
+              </div>
+            </div>
+          </li>
+          <li class="paper__item">
+            <a href="#" class="paper__title">ОБНОВЛЕНИЕ В НАШЕМ КАТАЛОГЕ!</a>
+            <div class="paper__wrap">
+              <a href="#" class="paper__img">
+                <img src="img/6_obnovlenie-v-nashem-katalog.jpg" alt="Новости" width="270" height="220">
+              </a>
+              <div class="paper__info">
+                <p>Спешим порадовать наших покупателей с поступлением в наш каталог 3 новых брендов: DeWALT, Makita Corporation, Alfred Kärcher GmbH & Co. KG</p>
+                <span class="paper__date"><i class="fas fa-calendar-alt"></i>02 НОЯБРЯ 2015 Г.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+    
+    <section class="features wrapper">
+      <ul class="features__list">
+        <li class="features__item">
+          <figure class="features__img">
+            <i class="fas fa-money-bill-alt"></i>
+          </figure>
+          <div class="features__info">
+            <p class="features__title">Оплата Курьеру</p>
+            <p>Возможна оплата при получении товара</p>
+          </div>
+        </li>
+        <li class="features__item">
+          <figure class="features__img">
+            <i class="fas fa-redo"></i>
+          </figure>
+          <div class="features__info">
+            <p class="features__title">Быстрая Замена Товара</p>
+            <p>Замена товара в этот же день</p>
+          </div>
+        </li>
+        <li class="features__item">
+          <figure class="features__img">
+            <i class="fas fa-truck"></i>
+          </figure>
+          <div class="features__info">
+            <p class="features__title">Бесплатная Доставка</p>
+            <p>Бесплатная доставка при покупке от 7000 т.р.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer class="footer wrapper">
+    <div class="footer__top">
+      <div class="footer__info">
+        <p class="footer__title">ИНТЕРНЕТ-МАГАЗИН TOOLSMARKET</p>
+        <p>Теперь все больше людей в собственное удовольствие занимаются садовыми работами – ухаживают за плодовыми деревьями, выращивают цветы, создают японские сады, альпийские горки. Именно их интересуют садовая техника, с помощью которой они получают превосходный результат без особых затрат сил и времени. Еще совсем недавно садовая техника была атрибутом профессиональных ландшафтных дизайнеров и работников озеленительных хозяйств.</p>
+        <form action="#" method="post" class="subscribe">
+          <p class="footer__title">ПОДПИСАТЬСЯ НА РАССЫЛКУ</p>
+          <div class="subscribe__wrap">
+            <input type="email" name="email" class="subscribe__input" placeholder="Введите Ваш email">
+            <button type="submit" class="btn subscribe__btn">OK</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">КАТАЛОГ ТОВАРОВ</p>
+        <button type="button" class="footer__btn"><i class="fas fa-angle-double-down"></i></button>
+        <ul class="footer__list">
+          <li><a href="#">Электроинструменты</a></li>
+          <li><a href="#">Садовая техника</a></li>
+          <li><a href="#">Силовая техника</a></li>
+          <li><a href="#">Клиннговое оборудование</a></li>
+          <li><a href="#">Слесарный инструмент</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">ИНФОРМАЦИЯ</p>
+        <button type="button" class="footer__btn"><i class="fas fa-angle-double-down"></i></button>
+        <ul class="footer__list">
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Хиты продаж</a></li>
+          <li><a href="#">Новые поступления</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__block footer__block--contacts">
+        <p class="footer__title">КОНТАКТЫ</p>
+        <p>Навание компании</p>
+        <a href="tel:+71234567890" class="footer__link">8 (123) 456-78-90</a>
+        <a href="mailto:info@sitename.sitename" class="footer__link">info@sitename.sitename</a>
+        <div class="social">
+          <p class="footer__title">МЫ В СОЦСЕТЯХ</p>
+          <ul class="social__list">
+            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" title="VKontakte"><i class="fab fa-vk"></i></a></li>
+            <li><a href="#" title="GooglePlus"><i class="fab fa-google-plus-g"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>Copyright © 2012 - 2018 гг.<br>Интернет-магазин инструментов ToolsMarket</p>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  
+  <!-- Mobile sidebar -->
+  <script>
+    $('.sidebar__btn').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('sidebar__btn--opened');
+    })
+  </script>
+</body>
+</html>
