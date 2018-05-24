@@ -28,3 +28,71 @@
   text-transform: uppercase;
   border-bottom: 1px solid #e2e2e2;
 }
+
+.info {
+  .ui-tabs-active {
+    background-color: @orange;
+    
+    .ui-tabs-anchor {
+      color: #fff;
+    }
+  }
+}
+
+.info__table {
+  width: 100%;
+  
+  td {
+    padding: 10px 20px;
+  }
+  
+  td:first-child {
+    width: 35%;
+    font-weight: 700;
+    color: #333;
+  }
+}
+
+.info__label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 700;
+  
+  span {
+    color: red;
+  }
+}
+
+.info__area,
+.info__input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 3px 5px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+}
+
+.info__input {
+  height: 27px;
+}
+
+.info__area {
+  height: 200px;
+  min-height: 200px;
+  outline: none;
+}
+
+.info__btn {
+  width: 110px;
+  
+  i {
+    margin-left: 5px;
+  }
+}
+
+.info__comment {
+  span {
+    color: red;
+  }
+}
