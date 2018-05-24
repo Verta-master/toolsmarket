@@ -58,6 +58,27 @@
   .catalog__item {
     width: 200px;
   }
+  .card__slider {
+    width: 650px;
+  }
+  .card__info {
+    width: 290px;
+  }
+  .info {
+    justify-content: center;
+  }
+  .info__field {
+    width: 704px;
+  }
+  .related__slider {
+    width: 864px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+  }
+  .title-2 {
+    text-align: center;
+  }
 }
 
 //----------------------------------
@@ -183,6 +204,18 @@
       margin-right: 0;
     }
   }
+  .card__slider {
+    width: 50%;
+  }
+  .info__field {
+    width: 448px;
+  }
+  .info__table td {
+    padding-left: 0;
+  }
+  .related__slider {
+    width: 566px;
+  }
 }
 
 //----------------------------
@@ -262,9 +295,41 @@
   }
 }
 
+//-----------------------------
 @media (max-width: 600px) {
   .news__slider {
     width: 270px;
+  }
+  .card__wrap {
+    display: block;
+  }
+  .info__field,
+  .card__slider {
+    width: 100%;
+  }
+  .card__info {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .info {
+    display: block;
+  }
+  .info__title {
+    width: 100%;
+    border-right: none;
+    border-bottom: none;
+    text-align: center;
+  }
+  .info__name:last-child a {
+    border-bottom: none;
+  }
+  .info__field {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .related__slider {
+    width: 268px;
   }
 }
 
