@@ -114,38 +114,193 @@
     
     <section class="basket wrapper">
       <h1>Корзина</h1>
-      <table class="basket__table">
-        <tr>
-          <th>Изображение</th>
-          <th>Название товара</th>
-          <th>Цена, р.</th>
-          <th>Количество</th>
-          <th>Сумма, р.</th>
-          <th>Удалить</th>
-        </tr>
-        <tr>
-          <td>
-            <a href="#"><img src="img/2_bosch-gsr-108-2-li-0.jpg" alt="" width="124" height="148"></a>
-          </td>
-          <td>
-            <a href="#" class="basket__title">ЭНКОР ДШЭ-2 350ЭР/10 1/8 50064 АРТИКУЛ: ДШЭ-2 350ЭР</a>
-          </td>
-          <td>
-            <p class="basket__price">2 013<i class="basket__sale">-10 %</i><span>2 237</span></p>
-          </td>
-          <td>
-            <div class="card__amount">
-              <button type="button" id="minus" class="card__number">-</button>
-              <input type="text" id="number" class="card__input" value="1">
-              <button type="button" id="plus" class="card__number">+</button>
-            </div>
-          </td>
-          <td>2 013</td>
-          <td>
-            <button class="basket__remove"><i class="fas fa-trash-alt"></i></button>
-          </td>
-        </tr>
-      </table>
+      <form action="#" method="post" class="basket__form">
+        <table class="basket__table">
+          <tr>
+            <th>Изображение</th>
+            <th>Название товара</th>
+            <th>Цена, р.</th>
+            <th>Количество</th>
+            <th>Сумма, р.</th>
+            <th>Удалить</th>
+          </tr>
+          <tr>
+            <td>
+              <a href="#" class="basket__img">
+                <img src="img/2_bosch-gsr-108-2-li-0.jpg" alt="" width="124" height="148">
+              </a>
+            </td>
+            <td>
+              <a href="#" class="basket__title">ЭНКОР ДШЭ-2 350ЭР/10 1/8 50064<br>АРТИКУЛ: ДШЭ-2 350ЭР</a>
+            </td>
+            <td class="basket__price">
+              <p>2 013</p>
+              <i>-10 %</i>
+              <span>2 237</span>
+            </td>
+            <td>
+              <div class="card__amount">
+                <button type="button" id="minus" class="card__number">-</button>
+                <input type="text" id="number" class="card__input" value="1">
+                <button type="button" id="plus" class="card__number">+</button>
+              </div>
+            </td>
+            <td class="basket__final">2 013</td>
+            <td>
+              <button class="basket__remove"><i class="fas fa-trash-alt"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#" class="basket__img">
+                <img src="img/2_bosch-gsr-108-2-li-0.jpg" alt="" width="124" height="148">
+              </a>
+            </td>
+            <td>
+              <a href="#" class="basket__title">ЭНКОР ДШЭ-2 350ЭР/10 1/8 50064<br>АРТИКУЛ: ДШЭ-2 350ЭР</a>
+            </td>
+            <td class="basket__price">
+              <p>2 013</p>
+              <i>-10 %</i>
+              <span>2 237</span>
+            </td>
+            <td>
+              <div class="card__amount">
+                <button type="button" id="minus" class="card__number">-</button>
+                <input type="text" id="number" class="card__input" value="1">
+                <button type="button" id="plus" class="card__number">+</button>
+              </div>
+            </td>
+            <td class="basket__final">2 013</td>
+            <td>
+              <button class="basket__remove"><i class="fas fa-trash-alt"></i></button>
+            </td>
+          </tr>
+        </table>
+        <p class="basket__total">Итого за товары<span>11 137 р.</span></p>
+        
+        <fieldset class="basket__field">
+          <p class="title-2">Дополнительно</p>
+          <ul class="basket__list">
+            <li class="basket__item">
+              <div class="basket__option">
+                <p class="basket__service">Грузчики</p>
+                <p>Бесплатно от суммы 25000 р.</p>
+              </div>
+              <p class="basket__rate">10%</p>
+              <p class="basket__sum">1 114 р.</p>
+              <div class="basket__add">
+                <input type="checkbox" name="load" id="load" class="filter__check">
+                <label for="load" class="filter__option">Добавить</label>
+              </div>
+            </li>
+            <li class="basket__item">
+              <div class="basket__option">
+                <p class="basket__service">Ремонт квартиры</p>
+                <p>Бесплатно от суммы 700000 р.</p>
+              </div>
+              <p class="basket__rate">100000</p>
+              <p class="basket__sum">100 000 р.</p>
+              <div class="basket__add">
+                <input type="checkbox" name="repair" id="repair" class="filter__check">
+                <label for="repair" class="filter__option">Добавить</label>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        
+        <fieldset class="basket__field">
+          <p class="title-2">Способ доставки</p>
+          <ul class="basket__list">
+            <li class="basket__item">
+              <div class="basket__option">
+                <p class="basket__service">Курьер</p>
+                <p>Товар доставляется курьером до двери Вашего дома.<br>Стоимость 500 р.<br>Бесплатно от суммы 6000 р.</p>
+              </div>
+              <p class="basket__sum">0</p>
+              <div class="basket__add">
+                <input type="radio" name="radio" id="carrier" class="basket__radio" checked>
+                <label for="carrier" class="basket__label">Выбрать</label>
+              </div>
+            </li>
+            <li class="basket__item">
+              <div class="basket__option">
+                <p class="basket__service">Почта России</p>
+                <p>Доставка по всей России небольших посылок<br>Стоимость 650 р.</p>
+              </div>
+              <p class="basket__sum">650</p>
+              <div class="basket__add">
+                <input type="radio" name="radio" id="post" class="basket__radio">
+                <label for="post" class="basket__label">Выбрать</label>
+              </div>
+            </li>
+            <li class="basket__item">
+              <div class="basket__option">
+                <p class="basket__service">EMS-доставка</p>
+                <p>Экспресс-доставка до дверей курьером в любую точку России<br>Стоимость 1200 р.</p>
+              </div>
+              <p class="basket__sum">1200</p>
+              <div class="basket__add">
+                <input type="radio" name="radio" id="ems" class="basket__radio">
+                <label for="ems" class="basket__label">Выбрать</label>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <p class="basket__total">Итого к оплате<span>12 250 p.</span></p>
+      </form>
+    </section>
+    
+    <section class="contacts wrapper">
+      <form action="#" class="login">
+        <p class="title-2">Авторизоваться:</p>
+        <label for="login" class="contacts__label">Имя пользователя</label>
+        <input type="text" name="login" id="login" class="contacts__input" required>
+        <label for="password" class="contacts__label">Пароль</label>
+        <input type="password" name="password" id="password" class="contacts__input" required>
+        <input type="checkbox" name="check" id="check-login" class="filter__check">
+        <label for="check-login" class="filter__option">Я не робот</label>
+        <button class="btn login__btn">Войти</button>
+      </form>
+      
+      <form action="#" class="contacts__form">
+        <fieldset class="contacts__field">
+          <p class="title-2">ВВЕДИТЕ КОНТАКТНУЮ ИНФОРМАЦИЮ</p>
+          <label for="name" class="contacts__label">ФИО или название компании<span>*</span>:</label>
+          <input type="text" name="name" id="name" class="contacts__input" required>
+          <label for="email" class="contacts__label">E-mail<span>*</span>:</label>
+          <input type="email" name="email" id="email" class="contacts__input" required>
+          <label for="phone" class="contacts__label">Контактные телефоны (с кодом города)<span>*</span>:</label>
+          <input type="tel" name="phone" id="phone" class="contacts__input" required>
+        </fieldset>
+        <fieldset class="contacts__field">
+          <p class="title-2">АДРЕС ДОСТАВКИ</p>
+          <label for="index" class="contacts__label">Индекс:</label>
+          <input type="text" name="index" id="index" class="contacts__input">
+          <label for="city" class="contacts__label">Город:</label>
+          <input type="text" name="city" id="city" class="contacts__input">
+          <label for="street" class="contacts__label">Улица, проспект и пр.:</label>
+          <input type="text" name="street" id="street" class="contacts__input">
+          <label for="house" class="contacts__label">Номер дома:</label>
+          <input type="text" name="house" id="house" class="contacts__input">
+          <label for="building" class="contacts__label">Корпус:</label>
+          <input type="text" name="building" id="building" class="contacts__input">
+          <label for="flat" class="contacts__label">Квартира, офис:</label>
+          <input type="text" name="flat" id="flat" class="contacts__input">
+          <label for="add" class="contacts__label">Дополнительно:</label>
+          <textarea name="add" id="add" class="contacts__text"></textarea>
+        </fieldset>
+        <fieldset class="contacts__field contacts__field--payment">
+          <p class="title-2">Выберите способ оплаты:</p>
+          <input type="radio" name="radio" id="payment" class="basket__radio" checked>
+          <label for="payment" class="basket__label">Наличными курьеру</label>
+          <span>Заказ необходимо оплатить курьеру на руки наличными</span>
+        </fieldset>
+        <input type="checkbox" name="check" id="check" class="filter__check">
+        <label for="check" class="filter__option">Я не робот</label>
+        <button type="submit" class="btn info__btn">Продолжить <i class="fas fa-angle-right"></i></button>
+        <p class="contacts__comment"><span>*</span> — Поля, обязательные для заполнения</p>
+      </form>
     </section>
     
     <section class="features wrapper">
