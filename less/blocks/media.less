@@ -73,6 +73,11 @@
   .title-2 {
     text-align: center;
   }
+  .catalog .tabs__item:nth-child(4n),
+  .catalog .tabs__item:nth-child(3n),
+  .catalog .tabs__item {
+    margin-right: auto;
+  }
 }
 
 //----------------------------------
@@ -221,6 +226,17 @@
   .basket__add {
     width: 100px;
   }
+  .catalog__figure {
+    float: none;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalog__sorting p {
+    margin-right: 0;
+    width: 100%;
+    padding-top: 15px;
+  }
 }
 
 //----------------------------
@@ -297,6 +313,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+  }
+  .catalog__figure {
+    float: left;
+    width: 25%;
+    margin-left: 0;
+    margin-right: 10px;
   }
 }
 
@@ -434,5 +456,14 @@
     width: 100%;
     padding-left: 0;
     margin-top: 20px;
+  }
+  .catalog__figure {
+    float: none;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-size: 24px;
   }
 }

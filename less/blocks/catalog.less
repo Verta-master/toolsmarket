@@ -1,5 +1,16 @@
 .catalog {
   width: 840px;
+  
+  .tabs__item {
+    margin-right: 18px;
+    
+    &:nth-child(4n) {
+      margin-right: 18px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .catalog__list {
@@ -27,6 +38,24 @@
   &:active {
     border-color: @orange;
     transition: ease-out 0.3s;
+    
+    .catalog__img img {
+      transform: scale(1.1);
+      transition: ease-out 0.3s;
+    }
+    
+    .catalog__title {
+      background-color: #333;
+      transition: ease-out 0.3s;
+    }
+  }
+  
+  &--sub {
+    padding-bottom: 0;
+    
+    .catalog__title {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -37,11 +66,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   
   img {
     display: block;
     max-height: 100%;
     width: auto;
+    transition: ease-out 0.3s;
   }
 }
 
@@ -57,12 +88,6 @@
   border-top: 1px solid @orange;
   border-bottom: 1px solid @orange;
   transition: ease-out 0.3s;
-  
-  &:hover,
-  &:active {
-    background-color: #333;
-    transition: ease-out 0.3s;
-  }
 }
 
 .catalog__link {
@@ -71,6 +96,83 @@
   margin-bottom: 10px;
   margin-top: 0;
   transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    color: @orange;
+    transition: ease-out 0.3s;
+  }
+}
+
+.catalog__promo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.catalog__figure {
+  float: left;
+  width: 25%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.catalog__sorting {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 0 10px;
+  background-color: #eaeaea;
+  
+  p {
+    margin: 0;
+    margin-right: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  fieldset {
+    border: none;
+    .reset();
+    margin-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.catalog__sort {
+  padding: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #777;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    color: @orange;
+    transition: ease-out 0.3s;
+  }
+}
+
+.catalog__more {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  transition: ease-out 0.3s;
+  
+  i {
+    padding-left: 10px;
+  }
   
   &:hover,
   &:active {
