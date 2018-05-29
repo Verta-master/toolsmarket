@@ -207,6 +207,20 @@
   .related__slider {
     width: 566px;
   }
+  .basket__price,
+  .basket__title {
+    font-size: 14px;
+  }
+  .basket__table {
+    td:first-child,
+    td:nth-child(5),
+    td:nth-child(3) {
+      width: 100px;
+    }
+  }
+  .basket__add {
+    width: 100px;
+  }
 }
 
 //----------------------------
@@ -322,6 +336,73 @@
   }
   .related__slider {
     width: 268px;
+  }
+  .basket__table {
+    tr:first-child {
+      display: none;
+    }
+    td,
+    tr {
+      display: block;
+      border: none;
+    }
+    tr {
+      padding-bottom: 30px;
+      border-top: 1px solid #ddd;
+    }
+    td:first-child,
+    td:nth-child(2),
+    td:nth-child(3) {
+      width: 100%;
+    }
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6) {
+      width: 32%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    td:nth-child(6) {
+      text-align: right;
+    }
+    .basket__price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      span {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .basket__title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .basket__total {
+    text-align: center;
+    
+    span {
+      margin-left: 20px;
+    }
+  }
+  .basket__item {
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .login {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .contacts__form {
+    width: 100%;
   }
 }
 
