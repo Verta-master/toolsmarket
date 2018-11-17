@@ -1,0 +1,137 @@
+1) Кнопке "Показать еще" добавить класс .btn (первым в списке!)
+
+2) Страница "Вопрос-Ответ":
+- Вопросу .faq_question и "Задайте Ваш вопрос" дописать класс .paper__title. 
+- Дату оформить как: 
+
+<div class="date paper__date"><i class="fas fa-calendar-alt"></i>14 сентября 2018</div>
+
+- Кнопке "Отправить" добавить класс .btn
+- Инпуту на форме добавить класс .contacts__input, для textarea класс .contacts__text, для меток класс .contacts__label.
+
+3) Страница "Новости":
+- дату оформить как выше
+- h2 дописать класс .paper__title
+- спискам дать класс .list
+- в блоке .news_all_img ссылкам добавить класс .news__img
+
+4) Добавить стили:
+
+.tabs__img a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+	width: 100%;
+    height: 100%;
+}
+.tabs__img img {
+max-height: 100%;
+}
+.catalog__promo {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+.catalog__info {
+width: 70%;
+}
+.paginator_more_button {
+width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.paginator {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.paginator span.active,
+.paginator a {
+display: block;
+  padding: 5px 11px;
+  margin-left: 4px;
+  margin-right: 4px;
+  line-height: 1;
+  -webkit-transition: ease-out 0.3s;
+  -o-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.paginator a:hover,
+.paginator a:active,
+.paginator span.active {
+  color: #fff;
+  background-color: #fa832a;
+  -webkit-transition: ease-out 0.3s;
+  -o-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.faq block {
+margin-bottom: 30px;
+}
+.privacy_field {
+    margin-top: 10px;
+}
+.faq_form {
+max-width: 450px;
+}
+.list {
+    padding-left: 25px;
+    list-style: disc;
+	margin-bottom: 20px;
+}
+.list li {
+margin-bottom: 5px;
+}
+.news_all_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.news_all_img .news__img {
+    width: 200px;
+	height: 170px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1022px) {
+.catalog__info,
+.catalog__figure {
+width: 100%;
+}
+.catalog__promo {
+display: block;
+}
+}
+@media (max-width: 700px) {
+.news_all_img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+}
