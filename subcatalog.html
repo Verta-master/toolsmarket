@@ -287,9 +287,20 @@
             <button class="catalog__sort"><i class="fas fa-chevron-circle-up"></i></button>
             <button class="catalog__sort"><i class="fas fa-chevron-circle-down"></i></button>
           </fieldset>
+          <div class="catalog__btns">
+            <a href="#" title="Плитка" class="catalog__btn catalog__btn--plate catalog__btn--active"><i class="fa fa-th"></i></a>
+            <a href="#" title="Список" class="catalog__btn catalog__btn--list"><i class="fa fa-list-ul"></i></a>
+          </div>
         </form>
         
         <ul class="tabs__list">
+          <li class="tabs__item tabs__item--title">
+            <span>Артикул</span>
+            <span>Наименование товара</span>
+            <span>Цена</span>
+            <span>Количество</span>
+            <span>В корзину</span>
+          </li>
           <li class="tabs__item">
             <div class="tabs__label">
               <span class="tabs__hit">ХИТ</span>
@@ -299,11 +310,17 @@
             <a href="#" class="tabs__img">
               <img src="img/2_bosch-gsr-108-2-li-0.jpg" alt="bosch-gsr-108-2-li-0" width="124" height="148">
             </a>
+            <span class="tabs__articul">6271DWPE</span>
             <p class="tabs__brand"><a href="#">BOSCH GSR 10,8-2-LI 0</a></p>
             <p>Дрель-шуруповерт аккумуляторная Bosch GSR 10,8-2-LI (0.601.868.109) предназначена для работ с крепежными...</p>
             <form action="#" class="tabs__form">
               <p class="tabs__price">7 110 р.<span>7 900 р.</span></p>
             </form>
+            <div class="card__amount">
+              <button type="button" id="minus" class="card__number">-</button>
+              <input type="text" id="number" class="card__input" value="1">
+              <button type="button" id="plus" class="card__number">+</button>
+            </div>
             <div class="tabs__btns">
               <a href="#" class="tabs__cart"><i class="fas fa-shopping-cart"></i> Купить</a>
               <a href="#" class="tabs__like tabs__like--active"><i class="fas fa-heart"></i></a>
@@ -316,6 +333,7 @@
             <a href="#" class="tabs__img">
               <img src="img/26_makita-6271dwpe.png" alt="MAKITA 6271DWPE" width="148" height="148">
             </a>
+            <span class="tabs__articul">6271DWPE</span>
             <p class="tabs__brand"><a href="#">MAKITA 6271DWPE</a></p>
             <p>Аккумуляторный шуруповерт Makita 6271DWPE предназначен для закручивания крепежных элементов.</p>
             <form action="#" class="tabs__form">
@@ -337,6 +355,11 @@
                 </select>
               </div>
             </form>
+            <div class="card__amount">
+              <button type="button" id="minus" class="card__number">-</button>
+              <input type="text" id="number" class="card__input" value="1">
+              <button type="button" id="plus" class="card__number">+</button>
+            </div>
             <div class="tabs__btns">
               <a href="#" class="tabs__cart"><i class="fas fa-shopping-cart"></i> Купить</a>
               <a href="#" class="tabs__like"><i class="fas fa-heart"></i></a>
@@ -350,11 +373,17 @@
             <a href="#" class="tabs__img">
               <img src="img/3_973649.jpg" alt="ЭНКОР ДШЭ-2 350ЭР/10 1/8 50064" width="148" height="133">
             </a>
+            <span class="tabs__articul">6271DWPE</span>
             <p class="tabs__brand"><a href="#">ЭНКОР ДШЭ-2 350ЭР/10 1/8 50064</a></p>
             <p>Электрическая дрель-шуруповерт Энкор ДШЭ-2 350ЭР/10 1/8 50064 - это электроинструмент для сверления,...</p>
             <form action="#" class="tabs__form">
               <p class="tabs__price">2 013 р.<span>2 237 р.</span></p>
             </form>
+            <div class="card__amount">
+              <button type="button" id="minus" class="card__number">-</button>
+              <input type="text" id="number" class="card__input" value="1">
+              <button type="button" id="plus" class="card__number">+</button>
+            </div>
             <div class="tabs__btns">
               <a href="#" class="tabs__cart"><i class="fas fa-shopping-cart"></i> Купить</a>
               <a href="#" class="tabs__like"><i class="fas fa-heart"></i></a>
@@ -367,11 +396,17 @@
             <a href="#" class="tabs__img">
               <img src="img/5_hitachi-ds12dvf3.jpg" alt="HITACHI DS12DVF3" width="148" height="118">
             </a>
+            <span class="tabs__articul">6271DWPE</span>
             <p class="tabs__brand"><a href="#">HITACHI DS12DVF3</a></p>
             <p>Несколько режимов крутящего момента - для выбора нужного в зависимости от интенсивности работы.</p>
             <form action="#" class="tabs__form">
               <p class="tabs__price">5 271 р.<span>5 857 р.</span></p>
             </form>
+            <div class="card__amount">
+              <button type="button" id="minus" class="card__number">-</button>
+              <input type="text" id="number" class="card__input" value="1">
+              <button type="button" id="plus" class="card__number">+</button>
+            </div>
             <div class="tabs__btns">
               <a href="#" class="tabs__cart"><i class="fas fa-shopping-cart"></i> Купить</a>
               <a href="#" class="tabs__like"><i class="fas fa-heart"></i></a>
@@ -563,6 +598,22 @@
       $(this).next().slideToggle();
       $(this).toggleClass('sidebar__btn--opened');
     })
+  </script>
+  
+  <!-- Catalog view switcher -->
+  <script>
+    $('.catalog__btn--list').click(function(e) {
+      e.preventDefault();
+      $('.catalog__btn--plate').removeClass('catalog__btn--active');
+      $(this).addClass('catalog__btn--active');
+      $('.tabs__list').addClass('tabs__list--table');
+    });
+    $('.catalog__btn--plate').click(function(e) {
+      e.preventDefault();
+      $('.catalog__btn--list').removeClass('catalog__btn--active');
+      $(this).addClass('catalog__btn--active');
+      $('.tabs__list').removeClass('tabs__list--table');
+    });
   </script>
 </body>
 </html>
