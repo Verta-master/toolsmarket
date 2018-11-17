@@ -2968,26 +2968,57 @@ h1 {
 .catalog__btn--active {
   color: #fa832a;
 }
+.tabs__form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tabs__btns {
+  margin-top: auto;
+}
 .card__amount,
 .tabs__articul,
 .tabs__item--title {
   display: none;
 }
-.catalog .tabs__item:nth-child(3n) {
-  margin-right: 18px;
-}
-.catalog .tabs__item:nth-child(4n) {
-  margin-right: 0;
-}
-.tabs__list--table {
-  display: block;
-}
-.tabs__list--table .tabs__item--title {
+.tabs__item--show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-weight: 700;
   text-align: center;
+  width: 100%;
+  min-height: auto;
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 0;
+}
+.tabs__list--table {
+  display: block;
 }
 .tabs__list--table .tabs__item {
   width: 100%;
@@ -3046,14 +3077,21 @@ h1 {
 }
 .tabs__list--table .tabs__brand {
   text-align: left;
-  width: 25%;
+  width: 32%;
 }
 .tabs__list--table .tabs__form {
-  width: 25%;
+  width: 40%;
   text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .tabs__list--table .tabs__btns {
-  width: 150px;
+  width: auto;
 }
 .tabs__list--table .tabs__cart {
   margin-bottom: 0;
@@ -3140,9 +3178,8 @@ h1 {
   .catalog .tabs__item {
     margin-right: auto;
   }
-  .catalog .tabs__item:nth-child(4n),
-  .catalog .tabs__item:nth-child(3n) {
-    margin-right: auto;
+  .catalog__btns {
+    display: none;
   }
 }
 @media (max-width: 1022px) {
@@ -3291,9 +3328,6 @@ h1 {
     margin-right: 0;
     width: 100%;
     padding-top: 15px;
-  }
-  .catalog__btns {
-    display: none;
   }
 }
 @media (max-width: 766px) {
